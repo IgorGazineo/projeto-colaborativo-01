@@ -1,11 +1,19 @@
-/* :root {
-  --color-1-laranja: #ff9f1c;
-  --color-2-vermelho: #d80032;
-  --color-3-dark: #3c3c3c;
-  --color-4-light: #f5f5f5;
-  --color-5-azul-claro: #aec5eb;
-  --color-6-azul-escuro: #3b60e4;
-} */
+:root {
+  --color-1: #6ea3c3;
+  --color-2: #82b2c7;
+  --color-3: #cfa577;
+  --color-4: #9fb8b2;
+  --color-5: #beb7a2;
+  --color-6: #001b2e;
+  --color-7: #294c60;
+  --color-8: #05204a;
+  --color-9: #1d263b;
+  --color-10: #223843;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  scroll-behavior: smooth;
+}
 
 .colaborador {
   width: 18rem;
@@ -14,11 +22,11 @@
   gap: 1.5rem;
   padding: 1.05rem;
   border-radius: 8px;
-  box-shadow: 0 0 4px var(--color-5-azul-claro);
+  box-shadow: 0 0 4px var(--color-7);
 }
 
 .colaborador:hover {
-  box-shadow: 0 0 6px var(--color-6-azul-escuro);
+  box-shadow: 0 0 6px var(--color-7);
 }
 
 .img-perfil {
@@ -34,29 +42,33 @@
 }
 
 .colaborador-title {
+  color: var(--color-8);
   font-size: 0.95rem;
+  text-align: center;
 }
 
 .colaborador-name,
 .colaborador-area {
-  margin: 0.3rem;
+  margin: 0.3rem 0;
   font-size: 0.95rem;
   color: #353535;
 }
 
 .colaborador-btn {
   display: inline-block;
-  background-color: var(--color-6-azul-escuro);
+  background-color: var(--color-6);
   padding: 0.25rem 0.75rem;
   text-decoration: none;
-  color: var(--color-4-light);
+  color: var(--color-white);
   border-radius: 8px;
   font-size: 0.85rem;
-  transition: background-color 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  border: 1.5px solid transparent;
 }
 
 .colaborador-btn:hover {
-  background-color: #243b8be4;
+  background-color: var(--color-7);
+  border-color: var(--color-black);
 }
 
 .not-found {
