@@ -1,0 +1,118 @@
+
+.btn {
+  cursor: pointer;
+  width: 50%;
+  padding: 7px;
+  border-radius: 10px;
+  margin: 0 auto 2vh auto  ;
+  display: block;
+  background-color: rgb(58, 162, 70);
+
+  outline: 2px solid;
+  outline-color: rgb(58, 162, 70);
+  outline-offset: 0px;
+  transition: all 550ms cubic-bezier(.36, .63, .5, .73);
+
+  &:hover {
+    color: #fff;
+    background-color: rgba(27, 133, 204, 0.801);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 7px;
+
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+}
+
+.form-container {
+  max-width: 400px;
+  padding: 20px;
+  margin: 0 2vw;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  // min-height: 70vh ;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    
+
+    .player-field {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      .remove-btn {
+        align-self: flex-start;
+        margin-top: 4px;
+        background-color: #ff4d4f;
+        color: #fff;
+        border: none;
+        padding: 4px 8px;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: darken(#ff4d4f, 10%);
+        }
+      }
+
+      .error-msg {
+        color: rgb(252, 211, 57);
+        font-size: 12px;
+        display: block;
+      }
+    }
+
+    .add-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2vw;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 4px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+
+      svg {
+        width: 20px;
+      }
+
+      &:hover {
+        background-color: darken(#007bff, 10%);
+      }
+
+    }
+
+    .submit-btn {
+      background-color: rgb(58, 162, 70);
+      color: #fff;
+      border: none;
+      padding: 8px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        background-color: darken(rgb(58, 162, 70), 10%);
+      }
+
+      &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  @media(min-width:400px) {
+    margin: 0 auto;
+    
+  }
+}
