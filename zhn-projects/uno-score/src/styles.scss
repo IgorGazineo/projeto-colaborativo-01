@@ -1,0 +1,51 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    font-family: "Madimi One", sans-serif;
+    min-height: 100vh;
+    color: #fff;
+}
+
+input, select {
+    border: none;
+    border-bottom: 2px solid rgb(0, 113, 188); /* Linha cinza inicial */
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    padding: 8px 5px;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  input:focus, select:focus {
+    border-bottom: 3px solid #329e3b; 
+  }
+
+  input::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+
+  input.invalid, select.invalid {
+    border-bottom: 2px solid #d81919; 
+  }
+
+  input[placeholder] {
+    font-size: 12px;
+  }
+
+  button {
+    list-style: none;
+    background-color: transparent;
+    border: none;
+  }

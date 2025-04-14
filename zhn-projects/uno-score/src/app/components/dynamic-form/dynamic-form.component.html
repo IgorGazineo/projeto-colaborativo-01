@@ -1,0 +1,37 @@
+<div *ngIf="hasOngoingMatch">
+  <button class="btn" (click)="resumeMatch()">Retomar partida <br> Em andamento</button>
+</div>
+<div class="form-container">
+  <form [formGroup]="playerForm" (ngSubmit)="onSubmit()">
+    <div formArrayName="players">
+      <div *ngFor="let player of players.controls; let i = index" [formGroupName]="i" class="player-field">
+        <label for="player-{{ i }}">Player {{ i + 1 }}</label>
+        <input id="player-{{ i }}" type="text" formControlName="username" placeholder="Enter player name"
+          [ngClass]="{ 'error': players.at(i).invalid && players.at(i).touched }" />
+        <button type="button" class="remove-btn" (click)="removePlayer(i)" *ngIf="players.length > 2">
+          Remove
+        </button>
+        <div *ngIf="players.at(i).invalid && players.at(i).touched" class="error-msg">
+          <p>Player no minimo 3 caracteres</p>
+        </div>
+
+      </div>
+    </div>
+    <button type="button" (click)="addPlayer()" class="add-btn">
+      Add Player
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+      </svg>
+    </button>
+  
+
+    <label for="training">Partida(s) Treino</label>
+    <input id="training" formControlName="training" type="number" min="1" placeholder="Training sessions" />
+
+    <label for="champion">Partida champion</label>
+    <input id="champion" formControlName="champion" type="number" placeholder="Training sessions" />
+
+    <button type="submit" [disabled]="playerForm.invalid" class="submit-btn">Iniciar Partida</button>
+  </form>
+</div>
