@@ -1,0 +1,34 @@
+<div class="container-form">
+
+<h2 class="title">Registre-se no Uno - Score</h2>
+
+
+    <form [formGroup]="cadastroForm" (ngSubmit)="submitForm()">
+        <label>Nome:</label>
+        <input type="text" formControlName="name">
+        <p class="invalid" *ngIf="isInvalid('name')">Nome obrigatório (mín. 3 caracteres)</p>
+
+        <label>Sobrenome:</label>
+        <input type="text" formControlName="surname">
+        <p class="invalid" *ngIf="isInvalid('surname')">Sobrenome obrigatório (mín. 3 caracteres)</p>
+
+        <label>Data de Nascimento:</label>
+        <input type="date" formControlName="birth">
+        <p class="invalid" *ngIf="isInvalid('birth')">Data de nascimento obrigatória</p>
+
+        <label>Usuário:</label>
+        <input type="text" formControlName="username">
+        <p class="invalid" *ngIf="isInvalid('username')">Usuário obrigatório (mín. 4 caracteres)</p>
+
+        <label>Senha:</label>
+        <input type="password" formControlName="password">
+        <p class="invalid" *ngIf="isInvalid('password')">Senha obrigatória (mín. 6 caracteres)</p>
+
+        <label>Confirmar Senha:</label>
+        <input type="password" formControlName="confirmPassword">
+        <p class="invalid" *ngIf="cadastroForm.hasError('passwordsMismatch')">As senhas não coincidem</p>
+
+        <button type="submit" [disabled]="cadastroForm.invalid">Cadastrar</button>
+    </form>
+
+</div>

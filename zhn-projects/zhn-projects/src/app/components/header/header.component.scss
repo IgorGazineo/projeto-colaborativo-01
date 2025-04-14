@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    justify-content: center;
+   
+    border-bottom: 1px solid rgba(252, 210, 57, 0.205);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    height: 20vh;
+
+    svg {
+        width: 50px;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            color: #fff;
+
+        }
+
+    }
+
+    .logo {
+        width: 120px;
+        height: 120px;
+    }
+
+
+}
