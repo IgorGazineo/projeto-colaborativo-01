@@ -1,0 +1,42 @@
+:root {
+  --white: #FFFCF8;
+  --red: #D62828;
+  --yellow: #FCBF49;
+  --lightGray: #DFDEDD;
+  --gray: #423F3F;
+  --black: #1C1311;
+  --orange: #F77F00;
+}
+
+.dark-mode:root {
+  --white: #060A2F;
+  --yellow: #ff9748;
+  --gray: #9f9f9f;
+  --black: #FFFCF8;
+}
+
+.cta.active {
+  &::before {
+      background-color: #060A2F;
+      opacity: 1;
+  }
+}
+
+.txt-cta.active {
+  color: #fff;
+}
+
+@mixin DisplayFlex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+  text-decoration: none;
+}

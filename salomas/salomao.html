@@ -3,19 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./assets/image/salomas_dev_logo.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Salomão Santos</title>
   </head>
   <body>
+    <div class="mobile-header">
+      <a href="#"><img src="./assets/image/salomas_dev_logo.svg" class="" alt="Logo do Salomão"></a>
+      <!-- <img class="hamburguer" src="./assets/icons/hamburguer_menu.svg" alt="Menu Hamburguer"> -->
+    </div>
+
     <header>
+      <a class="logo-desktop" href="#"><img width="120px" src="./assets/image/WhatsApp Image 2025-04-19 at 10.54.27 (1).jpeg" alt="Imagem de Salomão Santos em desenho"></a>
+      
       <nav>
-        <li>Home</li>
-        <li>About</li>
-        <li>Work</li>
+        <a href="#home">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+
+        <div class="container-langue">
+          <img id="moonImage" class="switch" src="./assets/icons/moon.svg" alt="moon-mod">
+          <div class="gtranslate_wrapper"></div>
+          <script>window.gtranslateSettings = {
+            "default_language": "pt", "languages": ["pt", "en"],
+            "wrapper_selector": ".gtranslate_wrapper", "alt_flags": { "en": "usa", "pt": "brazil" }
+            }</script>
+          <script src="https://cdn.gtranslate.net/widgets/latest/flags.js" defer></script>
+        </div>
       </nav>
     </header>
-    <h1>Salomão Santos</h1>
-    <p>Olá! Meu nome é Salomão Santos!</p>
 
     <script src="./js/main.js"></script>
   </body>
