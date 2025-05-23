@@ -12,6 +12,14 @@ const collaboratorsInfo = [
     devSpecialization: "full stack",
   },
   {
+    name: "Leticia Leme",
+    isMale: false,
+    hasBackButton: true,
+    path: "../LeticiaLemeHub/index.html",
+    picture: "https://avatars.githubusercontent.com/u/194449582?v=4",
+    devSpecialization: "frontend",
+  },
+  {
     name: "Andre Krykhtine",
     isMale: true,
     hasBackButton: true,
