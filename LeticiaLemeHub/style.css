@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    height: 80px;
+}
+
+body {
+    background-color: #D9D9D9;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    display: flex;
+    color: white;
+    font-family: 'Sora';
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.fantasma {
+    height: 150px;
+    margin-top: 40px;
+}
+
+.avatar {
+    display: flex;
+    margin-top: -550px;
+    margin-left: 1080px; 
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.conteudo__texto {
+    display: flex;
+    justify-content: center;
+    margin-left: 230px;
+    margin-top: 200px;
+    flex-direction: column;
+}
+
+.texto__dif {
+    font-family: 'Sora';
+    font-size: 22px;
+    width: 700px;
+    color: white;
+    text-shadow:  
+    -1px 0 #000,
+    1px -1px 0 #000,
+    1px 1px 0 #000,
+    -1px 1px 0 #000, 
+    0px -1px 0 #000,
+    0px 1px 0 #000;
+
+    span {
+        color: #000;
+        font-weight: 400;
+        font-size: 22px;
+    }
+}
+
+h2 {
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 22px;
+    width: 600px;
+    
+    span {
+        font-weight: 400;
+    }
+}
+
+p {
+    color: #000000b2;
+    font-size: 20px;
+    width: 800px;
+    margin-top: 20px;
+}
+
+.redes {
+display: flex;
+margin-left: 230px;
+margin-top: 40px;
+height: 70px;
+width: 70px;
+gap: 31px;
+}
+
+
+.botao {
+    display: flex;
+    background-color: #000;
+    text-decoration: none;
+    color: white;
+    font-family: 'Sora';
+    font-size: 22px;
+    height: 70px;
+    width: 200px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1350px;
+    margin-top: 140px;
+    transition: transform 0.1s ease;
+}
+
+.botao:active {
+    transform: scale(0.9);
+}
+
+.cursor {
+  display: inline-block;
+  width: 1ch;
+  animation: piscar 0.8s steps(1) infinite;
+}
+
+@keyframes piscar {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
