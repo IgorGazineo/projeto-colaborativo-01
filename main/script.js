@@ -16,7 +16,8 @@ const collaboratorsInfo = [
     isMale: false,
     hasBackButton: true,
     path: "../LeticiaLemeHub/index.html",
-    picture: "https://avatars.githubusercontent.com/u/194449582?v=4",
+    picture:
+      "https://media.licdn.com/dms/image/v2/D4D03AQFpv4Gmtjcqzw/profile-displayphoto-shrink_800_800/B4DZTHFgPaHYAc-/0/1738506896811?e=1753315200&v=beta&t=lqsi9bFuAr21w5fh_uX9xmPJE8kNsnf8tX1WlY2bmTQ",
     devSpecialization: "frontend",
   },
   {
