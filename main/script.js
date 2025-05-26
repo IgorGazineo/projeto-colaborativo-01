@@ -17,7 +17,7 @@ const collaboratorsInfo = [
     hasBackButton: true,
     path: "../LeticiaLemeHub/index.html",
     picture:
-      "https://media.discordapp.net/attachments/1348088940804177942/1375274280455241748/avatar.jpg?ex=6831177b&is=682fc5fb&hm=9415b4eaea38bdd4b8fdcbca848a4e305c3fa8532209c133d04c1ebb4e725a72&=&format=webp&width=502&height=502",
+      "https://media.discordapp.net/attachments/1348088940804177942/1375274280455241748/avatar.jpg?ex=68350bfb&is=6833ba7b&hm=931148f142ed4a45e72d6073444c0a51a0b2e11ed9be35727c4df0099a159766&=&format=webp&width=694&height=694",
     devSpecialization: "frontend",
   },
   {
