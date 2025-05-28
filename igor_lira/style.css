@@ -1,5 +1,3 @@
-
-
 *{
     margin: 0;
     padding: 0;
@@ -7,9 +5,9 @@
     border: none;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
-header{
+/* Header responsivo */
+.header {
     background-color: rgb(6, 6, 247);
     width: 100%;
     height: 15vh;
@@ -17,49 +15,115 @@ header{
     align-items: center;
     justify-content: flex-end;
     gap: 15px;
-   
+    padding: 10 10px;
 }
-.container{
+
+/* Container flexível */
+.container {
     background-color: rgb(69, 69, 78);
     display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
     color: rgb(245, 245, 247);
+    width: 100%;
+    
 }
-.sobre-imgem img{
+
+/* Imagem com responsividade */
+.sobre-imgem img {
     border-radius: 50%;
-    width: 30vw;
-    height: 60vh;
-    padding: 75px
+    width: 20vw; /* Usa unidades relativas ao viewport */
+    max-width: 200px; /* Limita o tamanho máximo */
+    height: auto; /* Mantém a proporção da imagem */
+    padding: 20px;
 }
+
+/* Texto responsivo */
 .sobre-texto {
+    flex: 1 1 300px; /* Permite que o texto cresça e encolha */
     text-align: center;
     padding: 20px;
-   
 }
-.sobre-texto h1{
-    font-size: 40px;
-   padding-top: 25px;
+
+/* Título ajustável */
+.sobre-texto h1 {
+    font-size: 5vw; /* Tamanho relativo ao viewport */
+    
+    padding-top: 20px;
 }
-.sobre-texto p{
-    padding-top: 30px;
-    font-size: 25px;
+
+/* Parágrafo com tamanho ajustável */
+.sobre-texto p {
+    padding-top: 20px;
+    font-size: 2.5vw;
+    
     padding-bottom: 20px;
     text-align: justify;
-    
+    padding-right: 10px;
 }
+
+/* Botão responsivo */
 .botao a {
+    display: inline-block;
     padding: 15px;
-    width: 10vw;
-    height: 5vh;
+    width: 20vw; /* Usa unidades relativas */
+    max-width: 150px; /* Limita o tamanho máximo */
+    height: auto;
     background-color: rgb(37, 37, 241);
     border-radius: 10px;
-    color:white;
-    font-size: 25px;
-    font-weight: bold;
-    border: none;
+    color: white;
+    font-size: 2vw;
     
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
 }
-.botao a:hover{
+
+/* Hover do botão */
+.botao a:hover {
     background-color: blue;
+}
+
+/* Media queries para ajustes específicos em telas menores */
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1, 1px;
+        text-align: center;
+        padding: 10px;
+
+
+    }
+   
+   
+    .header {
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    .sobre-imgem img {
+        justify-content: center;
+        width: 40vw;
+        max-width: 150px;
+        padding: 10px;
+    }
+
+    .sobre-texto h1 {
+        font-size: 8vw;
+    }
+
+    .sobre-texto p {
+        font-size: 4vw;
+    }
+
+    .botao .a {
+        width: 50vw;
+        max-width: 200px;
+        font-size: 4vw;
+        padding: 10px;
+    }
 }
 
     
